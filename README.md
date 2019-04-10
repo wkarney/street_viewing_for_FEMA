@@ -1,5 +1,5 @@
 # street_viewing_for_FEMA
-General Assembly DSI Bootcamp project for New Light Tech.: Using Google Street View as a baseline for damage assessment
+General Assembly DSI Bootcamp project for New Light Technology: Using Google Street View as a baseline for damage assessment
 
 ## Project Prompt:
 **Problem 6: Using Google Street View as a baseline for damage assessment.**
