@@ -2,6 +2,8 @@ from flask import render_template, flash, redirect, request
 from app import app
 from app.forms import LoginForm
 from app.forms import ContactForm
+from flask_uploads import UploadSet, configure_uploads, IMAGES
+
 
 @app.route('/')
 @app.route('/index')
@@ -53,3 +55,13 @@ def contact():
 
    elif request.method == 'GET':
         return render_template('contact.html', form=form)
+
+photos = UploadSet('photos', IMAGES)
+configure_uploads(app, photos)
+@app.route('/upload', methods=['GET', 'POST'])
+def upload():
+
+    if request.method == 'POST' and 'photo' in request.files:
+        filename = photos.save(request.files['photo'])
+        return filename
+    return render_template('upload.html')
