@@ -1,10 +1,36 @@
-# street_viewing_for_FEMA
-General Assembly DSI Bootcamp project for New Light Technology: Using Google Street View as a baseline for damage assessment
+#### Project Sight Visit: Collaboration Between New Light Technologies and General Assembly's Team: Street View
 
-## Project Prompt:
-**Problem 6: Using Google Street View as a baseline for damage assessment.**
+##### Team Background 
 
-*Problem Statement:* During the recovery phase immediately following a disaster, FEMA performs damage assessment “on the ground” to assess the level of damage caused to residential parcels and to critical infrastructure. To assure an accurate estimation of the damage, it is important to understand the condition of the structures prior to the event. To help and guide the damage assessment efforts following a disaster and to assist the surveyors identify the structures of interest, this tool (a web-app or a mobile app) will expect to get, as an input, a list of addresses. It will retrieve screen shots of the structures from Google Street View. The students will design a damage assessment form, which, in addition to relevant information about the level of damage to the structures, will also provide a pre-event photo of the assessed structure.
+[New Light Technologies](https://www.newlight.com) is a small, award-winning organization based in Washington, D.C. that provides solutions to government, commercial, and non-profit clients. NLT is a team of dedicated technologists, scientists, engineers, designers, and strategists working on some of the most interesting, challenging, and important assignments in the world, ranging from disaster response to enabling growing telecommunications networks to providing healthcare to Americans. Some of the organizations they work with include FEMA (the Federal Emergency Management Agency), USAID (the United States Agency for International Development), the U.S. Census Bureau, and The World Bank.
 
-- [Github Link for DSI-DC students' past work.](https://github.com/Mauriekathan/Image_Geo_Team_Street_View)
-- Feel free to use this as a reference or to build on top of it. **Make sure to provide credit where credit is due!!**
+[Ran Goldblatt, Ph.D.](https://newlighttechnologies.com/staff/ran-goldblatt/) our contact with NLT, is a Chief Scientist and a Senior Consultant at New Light Technologies. He is a remote sensing scientist, with extensive experience in geospatial analysis and image processing. Ran’s work supports disaster response through the development of innovative methods for data fusion, image processing, management and consolidation of multi-sources imagery, at FEMA, as well as other NLT clients. 
+
+Team Street View is a data science team at [General Assembly (GA)](https://generalassemb.ly). We draw our experiences from a diversity of backgrounds and industry experiences and are collaborating with NLT on a specific task of interest for which we have created a framework and concept for the ImageGEO tool.
+
+Our team is [Stevie DiSalvo](https://www.linkedin.com/in/stephanie-disalvo/), [John D Hazard](https://www.linkedin.com/in/jdhazard/), [Will Karnasiewicz](https://www.linkedin.com/in/wkarnasiewicz/), and [Omar Raheem](https://www.linkedin.com/in/omar-raheem-9153431a/).
+
+#### Problem Statement 
+
+During the recovery phase immediately following a disaster, FEMA performs damage assessment “on the ground” to assess the level of damage caused to residential parcels and to critical infrastructure. To assure an accurate estimation of the damage, it is important to understand the condition of the structures prior to the event. To help and guide the damage assessment efforts following a disaster, and to assist the surveyors in identification of the structures of interest, SightVisit. It will retrieve screen shots of the structures from Google Street View. A damage assessment form, which, in addition to relevant information about the level of damage to the structures, will also provide a pre-event photo of the assessed structure.
+
+#### Executive Summary
+
+
+#### Table of Contents
+[Executive Summary](/docs/Executive_Summary)
+[Use Case Scenario](Use Case Scenario)
+[Data Acquisition and Processing](Data Acquisition and Processing)
+[Required Libraries](Required Libraries)
+[Sight Visit App](Site Visit App)
+[Opportunities for Further Study](Opportunities for Furthur Study)
+
+#### Use Case Scenario
+
+#### Data Acquisition
+
+#### Required Libraries
+
+#### Sight Visit App
+
+#### Opportunities for Further Study
