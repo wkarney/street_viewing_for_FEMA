@@ -1,4 +1,4 @@
-#### Project Sight Visit: Collaboration Between New Light Technologies and General Assembly's Team: Street View
+#### Project SightVisit: Collaboration Between New Light Technologies and General Assembly's Team: StreetView
 
 ##### Team Background 
 
@@ -6,7 +6,7 @@
 
 [Ran Goldblatt, Ph.D.](https://newlighttechnologies.com/staff/ran-goldblatt/) our contact with NLT, is a Chief Scientist and a Senior Consultant at New Light Technologies. He is a remote sensing scientist, with extensive experience in geospatial analysis and image processing. Ran’s work supports disaster response through the development of innovative methods for data fusion, image processing, management and consolidation of multi-sources imagery, at FEMA, as well as other NLT clients. 
 
-Team Street View is a data science team at [General Assembly (GA)](https://generalassemb.ly). We draw our experiences from a diversity of backgrounds and industry experiences and are collaborating with NLT on a specific task of interest for which we have created a framework and concept for the ImageGEO tool.
+Team StreetView is composed of full-time data science immersive students at [General Assembly (GA)](https://generalassemb.ly). We draw our experiences from a diversity of backgrounds and industry experiences and are collaborating with NLT on a specific task of interest for which we have created a framework and concept for the SightVisit application.
 
 Our team is [Stevie DiSalvo](https://www.linkedin.com/in/stephanie-disalvo/), [John D Hazard](https://www.linkedin.com/in/jdhazard/), [Will Karnasiewicz](https://www.linkedin.com/in/wkarnasiewicz/), and [Omar Raheem](https://www.linkedin.com/in/omar-raheem-9153431a/).
 
@@ -22,8 +22,8 @@ During the recovery phase immediately following a disaster, FEMA performs damage
 [Use Case Scenario](Use Case Scenario)
 [Data Acquisition and Processing](Data Acquisition and Processing)
 [Required Libraries](Required Libraries)
-[Sight Visit App](Site Visit App)
-[Opportunities for Further Study](Opportunities for Furthur Study)
+[Sight Visit App](SiteVisit App)
+[Opportunities for Further Study](Opportunities for Further Study)
 
 #### Use Case Scenario
 
