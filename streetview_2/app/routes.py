@@ -1,7 +1,7 @@
-from flask import render_template, flash, redirect
+from flask import render_template, flash, redirect, request
 from app import app
 from app.forms import LoginForm
-
+from app.forms import ContactForm
 
 @app.route('/')
 @app.route('/index')
@@ -31,6 +31,7 @@ def login():
 @app.route('/sites')
 def sites():
     user = {'username': 'Omar'}
+    location = {'location': 'Paris'}
     posts = [
         {
             'site': {'location': 'Michigan'},
@@ -41,4 +42,14 @@ def sites():
             'body': 'TBA'
         }
     ]
-    return render_template('sites.html', title='Sites', user=user, posts=posts)
+    return render_template('sites.html', location=location ,title='Sites', user=user, posts=posts)
+
+@app.route('/contact', methods = ['GET', 'POST'])
+def contact():
+   form = ContactForm()
+
+   if request.method == 'POST':
+    return 'Form posted.'
+
+   elif request.method == 'GET':
+        return render_template('contact.html', form=form)
