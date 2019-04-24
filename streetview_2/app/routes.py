@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect, request
+from flask import render_template, flash, redirect, request, send_from_directory
 from app import app
 from app.forms import LoginForm
 from app.forms import ContactForm
@@ -63,5 +63,10 @@ def upload():
 
     if request.method == 'POST' and 'photo' in request.files:
         filename = photos.save(request.files['photo'])
-        return filename
+        return render_template('complete.html', image_name=filename)
     return render_template('upload.html')
+
+
+@app.route('/app/<filename>')
+def send_image(filename):
+    return send_from_directory("img", filename)
