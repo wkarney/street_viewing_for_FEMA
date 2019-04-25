@@ -3,12 +3,12 @@
 ## Table of Contents
 * [Team Introduction](#user-content-team-introduction)
 * [Problem Statement](#user-content-problem-statement)
-* [Executive Summary](#Executive Summary)
-* [Use Case Scenario](#Use Case Scenario)
-* [Data Acquisition and Processing](#Data Acquisition and Processing)
-* [Required Libraries](#Required Libraries)
-* [Sight Visit App](#SiteVisit App)
-* [Opportunities for Further Study](#Opportunities for Further Study)
+* [Executive Summary](#user-content-executive -summary)
+* [Use Case Scenario](#user-content-use-case-scenario)
+* [Data Acquisition and Processing](#user-content-data-acquisition-and-processing)
+* [Required Libraries](#user-content-required-libraries)
+* [Sight Visit App](#user-content-sitevisit-app)
+* [Opportunities for Further Improvements](#user-content-opportunities-for-improvements)
 
 ### Team Introduction
 
@@ -34,4 +34,4 @@ During the recovery phase immediately following a disaster, FEMA performs damage
 
 #### Sight Visit App
 
-#### Opportunities for Further Study
+#### Opportunities for Further Improvements
