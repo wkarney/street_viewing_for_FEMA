@@ -11,36 +11,44 @@
       {% for message in form.email.errors %}
          <div>{{ message }}</div>
       {% endfor %}
+      <img src=" {{url_for('send_image', filename=image_name)}}" height="640" width="400">
 
+      <img src=" {{url_for('send_image', filename=image_name2)}}" height="640" width="400">
       <form action = "http://localhost:5000/contact" method = post>
          <fieldset>
-            <legend>Disaster Form</legend>
+            <!-- <legend>Disaster Form</legend> -->
             {{ form.hidden_tag() }}
 
             <div style = font-size:20px; font-weight:bold; margin-left:150px;>
-               {{ form.name.label }}<br>
-               {{ form.name }}
+               <p class="tab"> {{ form.name.label }}<br>
+               {{ form.name }}</p>
                <br>
-               {{ form.Address.label }}<br>
+              <p class="tab"> {{ form.Address.label }}<br>
                {{ form.Address }}<br>
                {{ form.State.label }}<br>
                {{ form.State }}<br>
-               {{ form.Zip_Code.label }} {{ form.Zip_Code }}<br>
-               {{ form.Flood_Plain.label }} {{ form.Flood_Plain }}<br>
-               {{ form.Flood_NonFlood.label }} {{ form.Flood_NonFlood }}<br>
-               {{ form.Homes.label }} {{ form.Homes }}<br>
+               {{ form.Zip_Code.label }}<br>
+               {{ form.Zip_Code }}</p><br>
                <br>
-               {{ form.Insurance.label }} {{ form.Insurance }}<br>
-               {{ form.Flood_Insurance.label }} {{ form.Flood_Insurance }}<br>
+               <p class="tab"> {{ form.Flood_Plain.label }} {{ form.Flood_Plain }}</p><br>
 
-               {{ form.Damage_Level.label }}<br>
+               <p class="tab"> {{ form.Flood_NonFlood.label }}<br>
+              {{ form.Flood_NonFlood }}</p><br>
+              <br>
+               <p class="tab">{{ form.Homes.label }} {{ form.Homes }}</p><br>
+
+               <p class="tab">{{ form.Insurance.label }} {{ form.Insurance }}</p><br>
+               <p class="tab">{{ form.Flood_Insurance.label }} {{ form.Flood_Insurance }}</p><br>
+
+               <p class="tab">{{ form.Damage_Level.label }}<br>
                {{ form.Damage_Level}}<br>
+               <br>
                {{ form.email.label }}<br>
-               {{ form.email }}
+               {{ form.email }}</p>
                <br>
                <br>
                <br>
-               {{ form.submit }}
+               <p class="tab">{{ form.submit }} </p>
             </div>
 
          </fieldset>

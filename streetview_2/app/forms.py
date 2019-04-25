@@ -10,7 +10,7 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Sign In')
 
 class ContactForm(Form):
-   name = TextField("Name Of Resident",[validators.Required("Please enter your name.")])
+   name = TextField("Resident Name",[validators.Required("Please enter your name.")])
    Homes = RadioField('Homes', choices = [('C','Conventional'),('M','Manufactured')])
    Insurance = RadioField('Insurance', choices = [('Y','Yes'),('N','No')])
    Flood_Plain = RadioField('Flood Plain', choices = [('Y','Yes'),('N','No')])
