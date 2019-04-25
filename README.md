@@ -7,8 +7,8 @@
 * [Use Case Scenario](#user-content-use-case-scenario)
 * [Data Acquisition and Processing](#user-content-data-acquisition-and-processing)
 * [Required Libraries](#user-content-required-libraries)
-* [Sight Visit App](#user-content-sightvisit-app)
-* [Opportunities for Further Improvements](#user-content-opportunities-for-further-improvements)
+* [Sight Visit App](#user-content-sitevisit-app)
+* [Opportunities for Further Improvements](#user-content-opportunities-for-improvements)
 
 ### Team Introduction
 
@@ -28,10 +28,10 @@ During the recovery phase immediately following a disaster, FEMA performs damage
 
 ### Use Case Scenario
 
-### Data Acquisition and Processing
+### Data Acquisition
 
-### Required Libraries
+#### Required Libraries
 
-### SightVisit App
+#### Sight Visit App
 
-### Opportunities for Further Improvements
+#### Opportunities for Further Improvements
