@@ -2,7 +2,7 @@
 {% block content %}
 <html>
    <body>
-      <h2 style = "text-align: center;">Contact Form</h2>
+      <h2 style = "text-align: center;">Disaster Form</h2>
 
       {% for message in form.name.errors %}
          <div>{{ message }}</div>
@@ -14,29 +14,31 @@
 
       <form action = "http://localhost:5000/contact" method = post>
          <fieldset>
-            <legend>Contact Form</legend>
+            <legend>Disaster Form</legend>
             {{ form.hidden_tag() }}
 
             <div style = font-size:20px; font-weight:bold; margin-left:150px;>
                {{ form.name.label }}<br>
                {{ form.name }}
                <br>
-
-               {{ form.Gender.label }} {{ form.Gender }}
                {{ form.Address.label }}<br>
-               {{ form.Address }}
+               {{ form.Address }}<br>
+               {{ form.State.label }}<br>
+               {{ form.State }}<br>
+               {{ form.Zip_Code.label }} {{ form.Zip_Code }}<br>
+               {{ form.Flood_Plain.label }} {{ form.Flood_Plain }}<br>
+               {{ form.Flood_NonFlood.label }} {{ form.Flood_NonFlood }}<br>
+               {{ form.Homes.label }} {{ form.Homes }}<br>
                <br>
+               {{ form.Insurance.label }} {{ form.Insurance }}<br>
+               {{ form.Flood_Insurance.label }} {{ form.Flood_Insurance }}<br>
 
+               {{ form.Damage_Level.label }}<br>
+               {{ form.Damage_Level}}<br>
                {{ form.email.label }}<br>
                {{ form.email }}
                <br>
-
-               {{ form.Age.label }}<br>
-               {{ form.Age }}
                <br>
-
-               {{ form.language.label }}<br>
-               {{ form.language }}
                <br>
                {{ form.submit }}
             </div>
