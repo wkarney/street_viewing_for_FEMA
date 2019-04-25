@@ -30,8 +30,8 @@ During the recovery phase immediately following a disaster, FEMA performs damage
 
 ### Data Acquisition
 
-#### Required Libraries
+### Required Libraries
 
-#### Sight Visit App
+### Sight Visit App
 
-#### Opportunities for Further Improvements
+### Opportunities for Further Improvements
