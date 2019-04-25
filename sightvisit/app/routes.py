@@ -4,6 +4,25 @@ from app.forms import LoginForm
 from app.forms import ContactForm
 from flask_uploads import UploadSet, configure_uploads, IMAGES
 
+# API keys
+import app.keys as keys
+
+# Package imports for dealing with images
+from PIL import Image
+from PIL.ExifTags import TAGS, GPSTAGS
+
+# Package imports for Zillow
+from pyzillow.pyzillow import ZillowWrapper, GetDeepSearchResults
+
+# Package imports for Google Maps APIs
+import google_streetview.api
+
+# Geocoding and reverse Geocoding
+from pygeocoder import Geocoder
+
+# User defined functions
+from app.functions import get_gps_details, convert_to_degress, get_img_coord_str, get_img_coord_tuple, pull_streetview, reverse_lookup, zillow_query
+
 
 @app.route('/')
 @app.route('/index')
@@ -62,8 +81,17 @@ configure_uploads(app, photos)
 def upload():
 
     if request.method == 'POST' and 'photo' in request.files:
+        # Save uploaded file
         filename = photos.save(request.files['photo'])
-        return render_template('complete.html', image_name=filename)
+
+        # Use current photo to pull streetview photo
+        current_photo = Image.open(request.files['photo'])
+        pull_streetview(get_img_coord_str(current_photo), key=keys.google)
+        sview_photo = 'gsv_0.jpg'
+
+        # Render and return form page with photos
+        form = ContactForm()
+        return render_template('contact.html', form=form, image_name=filename, image_name2=sview_photo)
     return render_template('upload.html')
 
 
