@@ -1,8 +1,8 @@
 # Project SightVisit: Collaboration Between New Light Technologies and General Assembly's Team StreetView
 
 ## Table of Contents
-* [Team Introduction](#Team Introduction)
-* [Problem Statement](#Problem Statement)
+* [Team Introduction](#user-content-team-introduction)
+* [Problem Statement](#user-content-problem-statement)
 * [Executive Summary](#Executive Summary)
 * [Use Case Scenario](#Use Case Scenario)
 * [Data Acquisition and Processing](#Data Acquisition and Processing)
@@ -20,7 +20,7 @@ Team StreetView is composed of full-time data science immersive students at [Gen
 
 Our team is [Stevie DiSalvo](https://www.linkedin.com/in/stephanie-disalvo/), [John D Hazard](https://www.linkedin.com/in/jdhazard/), [Will Karnasiewicz](https://www.linkedin.com/in/wkarnasiewicz/), and [Omar Raheem](https://www.linkedin.com/in/omar-raheem-9153431a/).
 
-## Problem Statement
+### Problem Statement
 
 During the recovery phase immediately following a disaster, FEMA performs damage assessment “on the ground” to assess the level of damage caused to residential parcels and to critical infrastructure. To assure an accurate estimation of the damage, it is important to understand the condition of the structures prior to the event. To help and guide the damage assessment efforts following a disaster, and to assist the surveyors in identification of the structures of interest, SightVisit. It will retrieve screen shots of the structures from Google Street View. A damage assessment form, which, in addition to relevant information about the level of damage to the structures, will also provide a pre-event photo of the assessed structure.
 
