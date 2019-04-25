@@ -6,7 +6,7 @@ Functions for pulling external data from APIs:
 - Google reverse geocode/address lookup functionality
 - Zillow data on house prices and details
 """
-import keys  # API keys
+# import keys  # API keys
 
 # Package imports for dealing with images
 from PIL import Image
@@ -121,14 +121,14 @@ def get_img_coord_tuple(img):
 
 
 # Google Maps streetview functionality
-def get_streetview_link(location,
+def pull_streetview(location,
                         size='640x480',
                         fov='90',
                         pitch='0',
                         radius='50',
                         key='YOURAPIKEYHERE',
                         heading=None):
-    """Function for obtaining google streetview url for a given location (either address or latitude,longitude; formated as str)
+    """Function for obtaining google streetview image for a given location (either address or latitude,longitude; formated as str)
 
     Args:
         location (str): location either as address or lat./long.
@@ -162,7 +162,7 @@ def get_streetview_link(location,
         params[0]['heading'] = heading
 
     results = google_streetview.api.results(params)
-    return results.links
+    results.download_links('./app/img')
 
 
 def reverse_lookup(lat, long, key='YOURAPIKEY'):
