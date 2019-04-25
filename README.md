@@ -31,7 +31,13 @@ During the recovery phase immediately following a disaster, FEMA performs damage
 ### Data Acquisition
 
 ### Required Libraries
+* (Python 3.x)
+* flask
+* pillow
+* pyzillow
+* google_streetview.api
+* pygeocoder
 
-### Sight Visit App
+### SightVisit App
 
 ### Opportunities for Further Improvements
