@@ -3,7 +3,7 @@
 ## Table of Contents
 * [Team Introduction](#user-content-team-introduction)
 * [Problem Statement](#user-content-problem-statement)
-* [Executive Summary](#user-content-executive -summary)
+* [Executive Summary](#user-content-executive-summary)
 * [Use Case Scenario](#user-content-use-case-scenario)
 * [Data Acquisition and Processing](#user-content-data-acquisition-and-processing)
 * [Required Libraries](#user-content-required-libraries)
