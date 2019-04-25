@@ -3,7 +3,6 @@ from app import app
 from app.forms import LoginForm
 from app.forms import ContactForm
 from flask_uploads import UploadSet, configure_uploads, IMAGES
-
 # API keys
 import app.keys as keys
 
@@ -22,7 +21,6 @@ from pygeocoder import Geocoder
 
 # User defined functions
 from app.functions import get_gps_details, convert_to_degress, get_img_coord_str, get_img_coord_tuple, pull_streetview, reverse_lookup, zillow_query
-
 
 @app.route('/')
 @app.route('/index')
@@ -65,7 +63,7 @@ def sites():
     ]
     return render_template('sites.html', location=location ,title='Sites', user=user, posts=posts)
 
-@app.route('/contact', methods = ['GET', 'POST'])
+@app.route('/form', methods = ['GET', 'POST'])
 def contact():
    form = ContactForm()
 
@@ -93,7 +91,6 @@ def upload():
         form = ContactForm()
         return render_template('contact.html', form=form, image_name=filename, image_name2=sview_photo)
     return render_template('upload.html')
-
 
 @app.route('/app/<filename>')
 def send_image(filename):
