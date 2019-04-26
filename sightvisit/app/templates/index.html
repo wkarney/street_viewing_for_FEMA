@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome Back {{ user.username }}!</h1>
+    <h1><p class="tab">Welcome Back {{ user.username }}!</p></h1>
     {% for post in posts %}
-    <div><p>{{ post.author.username }} new post: <b>{{ post.body }}</b></p></div>
+    <div><p class="tab" >{{ post.author.username }} new post: <b>
+      {{ post.body }}</b></p>
+    </div>
     {% endfor %}
 {% endblock %}
