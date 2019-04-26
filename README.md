@@ -44,4 +44,4 @@ During the recovery phase immediately following a disaster, FEMA performs damage
 ### Opportunities for Further Improvements
 
 ### References
-* (Hurricane Sandy Photo by Chester Green)[https://www.flickr.com/photos/24531833@N02/8162005749/in/photolist-drfpX4-drfoAJ-drfsto-dp2FKF-drfqsE-drfhFV-dp3D53-dp4xyV-doEcnm-dqJRKr-doVMXY-dqK27z-dpkrnc-dqJPsF-dvjbKq-dqJWsu-dqJUh7-dqJVws-dtcnju-dqJYoa-drfo2D-doV9fm-dqJVLu-doVEX8-dqJY1m-doXbEJ-fAZ2Ap-drwzVa-dqK5mW-dqJLxi-dqK6eq-dtbnax-sJjkTN-dqJT85-dtbndk-drfjXi-dqK4kE-stWQj7-dpkxxH-drfqCR-drfqUy-dqK8g3-su3DRE-doVF5k-dqJXqb-dp3aCf-dpjmxT-dy7Tz6-dwYf5a-dqh3VX]
+* [Hurricane Sandy Photo by Chester Green](https://www.flickr.com/photos/24531833@N02/8162005749/in/photolist-drfpX4-drfoAJ-drfsto-dp2FKF-drfqsE-drfhFV-dp3D53-dp4xyV-doEcnm-dqJRKr-doVMXY-dqK27z-dpkrnc-dqJPsF-dvjbKq-dqJWsu-dqJUh7-dqJVws-dtcnju-dqJYoa-drfo2D-doV9fm-dqJVLu-doVEX8-dqJY1m-doXbEJ-fAZ2Ap-drwzVa-dqK5mW-dqJLxi-dqK6eq-dtbnax-sJjkTN-dqJT85-dtbndk-drfjXi-dqK4kE-stWQj7-dpkxxH-drfqCR-drfqUy-dqK8g3-su3DRE-doVF5k-dqJXqb-dp3aCf-dpjmxT-dy7Tz6-dwYf5a-dqh3VX)
