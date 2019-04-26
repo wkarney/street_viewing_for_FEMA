@@ -16,40 +16,42 @@
 
       <img src=" {{url_for('send_image', filename=image_name)}}" height="640" width="400">
       <br>
-
-      <form action = "http://localhost:5000/contact" method = post>
+      <!-- <form action = "http://localhost:5000/contact" method = post> -->
+      <form action = "/contact" method = post>
          <fieldset>
             <!-- <legend>Disaster Form</legend> -->
             {{ form.hidden_tag() }}
 
-            <div style = font-size:20px; font-weight:bold; margin-left:150px;>
-               <p class="tab"> {{ form.name.label }}<br>
-               {{ form.name }}</p>
-               <br>
-              <p class="tab"> {{ form.Address.label }}:{{address}} {{city}}<br>
-               <!-- {{ form.Address(default=address) }}<br> -->
-               {{ form.State.label }}:{{state}}<br>
-               <!-- {{ form.State }}<br> -->
-               {{ form.Zip_Code.label }}:{{zipcode}}<br>
-               <!-- {{ form.Zip_Code }}</p><br> -->
-               <br>
-               <p class="tab"> {{ form.Flood_Plain.label }} {{ form.Flood_Plain }}</p><br>
-
-               <p class="tab"> {{ form.Flood_NonFlood.label }}<br>
-              {{ form.Flood_NonFlood }}</p><br>
+            <div style = font-size:16px; font-weight:bold; margin-left:150px;>
               <br>
-               <p class="tab">{{ form.Homes.label }} {{ form.Homes }}</p><br>
+              <h5 class="tab"> <u><b>General House Details:</b></u></h5>
+              <p class="tab"> <b>{{ form.name.label }} </b>{{ form.name }}<br>
+              <b>{{ form.email.label }}</b>{{ form.email }}</p>
+                <p class="tab"> <b>{{ form.Address.label }} </b>{{address}}<br>
+                <b>Town/City: </b>{{city}}<br>
+               <!-- {{ form.Address(default=address) }}<br> -->
+                <b>{{ form.State.label }} </b>{{state}}<br>
+               <!-- {{ form.State }}<br> -->
+                <b>{{ form.Zip_Code.label }} </b>{{zipcode}}<br></p>
+               <!-- {{ form.Zip_Code }}</p><br> -->
+                <p class="tab"><b>{{ form.Homes.label }}</b> {{ form.Homes }}</p>
 
-               <p class="tab">{{ form.Insurance.label }} {{ form.Insurance }}</p><br>
-               <p class="tab">{{ form.Flood_Insurance.label }} {{ form.Flood_Insurance }}</p><br>
+               <h5 class="tab"> <u><b>Additional Property Details:</b></u></h5>
+               <p class="tab"> <b>House Type: </b>{{ bldg_type }}<br>
+                               <b>Square Footage: </b>{{ bldg_size }}<br>
+                               <b>Number of Bedrooms: </b>{{ beds }}<br>
+                               <b>Number of Bathrooms: </b>{{ baths }}<br>
+                               <b>Estimated Valuation (Zillow - {{val_desc}}): </b>{{ value }}<br>
+                               <b>Valuation Date (Zillow - {{val_desc}}): </b>{{ val_date }}<br>
+              </p>
 
-               <p class="tab">{{ form.Damage_Level.label }}<br>
-               {{ form.Damage_Level}}<br>
-               <br>
-               {{ form.email.label }}<br>
-               {{ form.email }}</p>
-               <br>
-               <br>
+               <h5 class="tab"> <u><b>Damage Details:</b></u></h5>
+               <p class="tab"> {{ form.Flood_Plain.label }} {{ form.Flood_Plain }}<br>
+               <!-- <p class="tab"> {{ form.Flood_NonFlood.label }} {{ form.Flood_NonFlood }}</p> -->
+                               {{ form.Insurance.label }} {{ form.Insurance }}<br>
+                               {{ form.Flood_Insurance.label }} {{ form.Flood_Insurance }}<br>
+                               {{ form.Damage_Level.label }} {{ form.Damage_Level}}<br>
+               </p>
                <br>
                <p class="tab">{{ form.submit }} </p>
             </div>
