@@ -11,6 +11,7 @@
       {% for message in form.email.errors %}
          <div>{{ message }}</div>
       {% endfor %}
+
       <img src=" {{url_for('send_image', filename=image_name)}}" height="640" width="400">
 
       <img src=" {{url_for('send_image', filename=image_name2)}}" height="640" width="400">
@@ -23,8 +24,8 @@
                <p class="tab"> {{ form.name.label }}<br>
                {{ form.name }}</p>
                <br>
-              <p class="tab"> {{ form.Address.label }}<br>
-               {{ form.Address }}<br>
+              <p class="tab"> {{ form.Address.label }}:<br>
+               {{ form.Address(default=address) }}<br>
                {{ form.State.label }}<br>
                {{ form.State }}<br>
                {{ form.Zip_Code.label }}<br>

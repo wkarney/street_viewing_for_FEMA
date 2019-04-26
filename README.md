@@ -7,8 +7,8 @@
 * [Use Case Scenario](#user-content-use-case-scenario)
 * [Data Acquisition and Processing](#user-content-data-acquisition-and-processing)
 * [Required Libraries](#user-content-required-libraries)
-* [Sight Visit App](#user-content-sitevisit-app)
-* [Opportunities for Further Improvements](#user-content-opportunities-for-improvements)
+* [SightVisit App](#user-content-sitevisit-app)
+* [Opportunities for Further Improvements](#user-content-opportunities-for-further-improvements)
 
 ### Team Introduction
 

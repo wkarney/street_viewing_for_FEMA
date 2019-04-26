@@ -117,7 +117,7 @@ def get_img_coord_tuple(img):
     if get_gps_details(img)['GPSLongitudeRef'] == 'W':
         longitude = -longitude
 
-    return lat, long
+    return lat, longitude
 
 
 # Google Maps streetview functionality
@@ -144,7 +144,7 @@ def pull_streetview(location,
         heading (str): (default=None)
 
     Returns:
-        url with most recent google streetview photo
+        downloads photo of streetview
     """
     try:
         filename = location.replace(' ', '_')
@@ -164,6 +164,44 @@ def pull_streetview(location,
     results = google_streetview.api.results(params)
     results.download_links('./app/img')
 
+def get_streetview_link(location,
+                        size='640x480',
+                        fov='90',
+                        pitch='0',
+                        radius='50',
+                        key='YOURAPIKEYHERE',
+                        heading=None):
+    """Function for obtaining google streetview image for a given location (either address or latitude,longitude; formated as str)
+
+    Args:
+        location (str): location either as address or lat./long.
+
+        size (str): (default='(640x480)') size of the outputted image in pixels
+
+        fov (str): (default='90')
+
+        ptich (str): (default='0')
+
+        key (str): (default='YOURAPIKEYHERE') google streetview api key
+
+        heading (str): (default=None)
+
+    Returns:
+        url with most recent google streetview photo
+    """
+    params = [{
+        'size': size,
+    	'location': location,
+        'fov': fov,
+    	'pitch': pitch,
+        'radius': radius,
+    	'key': keys.google['api_key']
+    }]
+    if heading != None:
+        params[0]['heading'] = heading
+
+    results = google_streetview.api.results(params)
+    return results.links
 
 def reverse_lookup(lat, long, key='YOURAPIKEY'):
     """Function for lookup of addresses from latitude, longitude details using Google Maps API

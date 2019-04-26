@@ -25,14 +25,14 @@ from app.functions import get_gps_details, convert_to_degress, get_img_coord_str
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username': 'Omar'}
+    user = {'username': 'Carol'}
     posts = [
         {
             'author': {'username': 'John'},
             'body': 'Updated Images'
         },
         {
-            'author': {'username': 'Susan'},
+            'author': {'username': 'Stevie'},
             'body': 'Updated Images'
         }
     ]
@@ -84,12 +84,30 @@ def upload():
 
         # Use current photo to pull streetview photo
         current_photo = Image.open(request.files['photo'])
+        try:
+            gps_string = get_img_coord_str(current_photo)
+        except:
+            # output img without streeview
+            pull_streetview("38.556","-76.41", key=keys.google)
         pull_streetview(get_img_coord_str(current_photo), key=keys.google)
         sview_photo = 'gsv_0.jpg'
 
+        # Pull latitude and longitude data as floats
+        coords = get_img_coord_tuple(current_photo)
+        latitude = coords[0]
+        longitude = coords[1]
+        address_details = reverse_lookup(lat=latitude, long=longitude, key=keys.google)
+        subj_address = address_details[0]
+        subj_zipcode = address_details[1]
+
+        # Pull zillow Data
+        zillowresult = zillow_query(address=subj_address, zipcode=subj_zipcode, key=keys.zillow)
+        num_beds = zillowresult.bedrooms
+
+
         # Render and return form page with photos
         form = ContactForm()
-        return render_template('contact.html', form=form, image_name=filename, image_name2=sview_photo)
+        return render_template('contact.html', form=form, image_name=filename, image_name2=sview_photo, address=subj_address, zipcode=subj_zipcode)
     return render_template('upload.html')
 
 @app.route('/app/<filename>')
