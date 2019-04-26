@@ -102,6 +102,7 @@ def upload():
         subj_city = address_details[2]
         subj_state = address_details[3]
 
+
         # Pull zillow Data
         zillowresult = zillow_query(address=subj_address, zipcode=subj_zipcode, key=keys.zillow)
         num_beds = zillowresult.bedrooms
