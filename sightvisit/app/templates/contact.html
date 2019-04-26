@@ -2,7 +2,8 @@
 {% block content %}
 <html>
    <body>
-      <h2 style = "text-align: center;">Disaster Form</h2>
+      <h2 class="tab" style = "text-align: left;">Damage Assessment Form</h2>
+      <h4 class="tab" style = "text-align: left;">Before and After Photos:</h2>
 
       {% for message in form.name.errors %}
          <div>{{ message }}</div>
@@ -11,10 +12,11 @@
       {% for message in form.email.errors %}
          <div>{{ message }}</div>
       {% endfor %}
+      <img class="tab" src=" {{url_for('send_image', filename=image_name2)}}" height="640" width="400">
 
       <img src=" {{url_for('send_image', filename=image_name)}}" height="640" width="400">
+      <br>
 
-      <img src=" {{url_for('send_image', filename=image_name2)}}" height="640" width="400">
       <form action = "http://localhost:5000/contact" method = post>
          <fieldset>
             <!-- <legend>Disaster Form</legend> -->
@@ -24,12 +26,12 @@
                <p class="tab"> {{ form.name.label }}<br>
                {{ form.name }}</p>
                <br>
-              <p class="tab"> {{ form.Address.label }}:<br>
-               {{ form.Address(default=address) }}<br>
-               {{ form.State.label }}<br>
-               {{ form.State }}<br>
-               {{ form.Zip_Code.label }}<br>
-               {{ form.Zip_Code }}</p><br>
+              <p class="tab"> {{ form.Address.label }}:{{address}} {{city}}<br>
+               <!-- {{ form.Address(default=address) }}<br> -->
+               {{ form.State.label }}:{{state}}<br>
+               <!-- {{ form.State }}<br> -->
+               {{ form.Zip_Code.label }}:{{zipcode}}<br>
+               <!-- {{ form.Zip_Code }}</p><br> -->
                <br>
                <p class="tab"> {{ form.Flood_Plain.label }} {{ form.Flood_Plain }}</p><br>
 
