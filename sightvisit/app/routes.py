@@ -42,8 +42,9 @@ def index():
 def login():
     form = LoginForm()
     if form.validate_on_submit():
-        flash('Login requested for user {}, remember_me={}'.format(
-            form.username.data, form.remember_me.data))
+        ## User login details
+        # flash('Login requested for user {}, remember_me={}'.format(
+        #     form.username.data, form.remember_me.data))
         return redirect('/index')
     return render_template('login.html', title='Sign In', form=form)
 
@@ -102,15 +103,23 @@ def upload():
         subj_city = address_details[2]
         subj_state = address_details[3]
 
-
         # Pull zillow Data
         zillowresult = zillow_query(address=subj_address, zipcode=subj_zipcode, key=keys.zillow)
+        house_type = zillowresult.home_type
+        house_size = zillowresult.home_size
         num_beds = zillowresult.bedrooms
-
+        num_baths = zillowresult.bathrooms
+        est_value = zillowresult.zestimate_amount
+        est_date = zillowresult.zestimate_last_updated
+        val_desc = "Zestimate"
+        if est_value == None:
+            est_value = zillowresult.tax_value
+            est_date = zillowresult.tax_year
+            val_desc = "Tax Assessment"
 
         # Render and return form page with photos
         form = ContactForm()
-        return render_template('contact.html', form=form, image_name=filename, image_name2=sview_photo, address=subj_address, zipcode=subj_zipcode, city=subj_city, state=subj_state)
+        return render_template('contact.html', form=form, image_name=filename, image_name2=sview_photo, address=subj_address, zipcode=subj_zipcode, city=subj_city, state=subj_state, bldg_type=house_type, bldg_size=house_size, beds=num_beds, baths=num_baths, value=est_value, val_date=est_date, val_desc=val_desc)
     return render_template('upload.html')
 
 @app.route('/app/<filename>')
