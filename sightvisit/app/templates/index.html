@@ -1,10 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1><p class="tab">Welcome Back {{ user.username }}!</p></h1>
-    {% for post in posts %}
-    <div><p class="tab" >{{ post.author.username }} new post: <b>
-      {{ post.body }}</b></p>
+    <h1><p class="tab">Welcome Back FEMA agent {{ user.username }}!</p></h1>
+    <!-- {% for post in posts %} -->
+    <!-- <div><p class="tab" ><b>{{ post.author.username }} new post:</b>
+      <img src="{{url_for('static', filename='campfire.jpg')}}" height=150, width=300 align=left</p>
+    </div> -->
+    <!-- {% endfor %} -->
+    <div><p class="tab" ><b>John's new post:</b>
+      <img src="{{url_for('static', filename='campfire.jpg')}}" height=150, width=300 align=left</p>
     </div>
-    {% endfor %}
+    <div><p class="tab" ><b>Stevie's new post:</b>
+      <img src="{{url_for('static', filename='bailbonds.jpg')}}" height=150, width=300 align=left</p>
+    </div>
 {% endblock %}

@@ -220,7 +220,9 @@ def reverse_lookup(lat, long, key='YOURAPIKEY'):
     location_details = result.split(",")
     address = location_details[0]
     zipcode = location_details[-2][-5:]
-    return address, zipcode
+    city = location_details[1]
+    state = location_details[2].split(" ")[1]
+    return address, zipcode, city, state
 
 
 # Zillow functionality

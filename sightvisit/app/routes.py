@@ -25,7 +25,7 @@ from app.functions import get_gps_details, convert_to_degress, get_img_coord_str
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username': 'Carol'}
+    user = {'username': 'Carol Evans'}
     posts = [
         {
             'author': {'username': 'John'},
@@ -49,15 +49,15 @@ def login():
 
 @app.route('/sites')
 def sites():
-    user = {'username': 'Omar'}
+    user = {'username': 'Carol'}
     location = {'location': 'Paris'}
     posts = [
         {
-            'site': {'location': 'Michigan'},
+            'site': {'location': 'New York'},
             'body': 'TBA'
         },
         {
-            'site': {'location': 'Texas'},
+            'site': {'location': ''},
             'body': 'TBA'
         }
     ]
@@ -99,6 +99,9 @@ def upload():
         address_details = reverse_lookup(lat=latitude, long=longitude, key=keys.google)
         subj_address = address_details[0]
         subj_zipcode = address_details[1]
+        subj_city = address_details[2]
+        subj_state = address_details[3]
+
 
         # Pull zillow Data
         zillowresult = zillow_query(address=subj_address, zipcode=subj_zipcode, key=keys.zillow)
@@ -107,7 +110,7 @@ def upload():
 
         # Render and return form page with photos
         form = ContactForm()
-        return render_template('contact.html', form=form, image_name=filename, image_name2=sview_photo, address=subj_address, zipcode=subj_zipcode)
+        return render_template('contact.html', form=form, image_name=filename, image_name2=sview_photo, address=subj_address, zipcode=subj_zipcode, city=subj_city, state=subj_state)
     return render_template('upload.html')
 
 @app.route('/app/<filename>')
