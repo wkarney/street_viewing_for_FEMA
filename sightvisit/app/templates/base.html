@@ -1,5 +1,6 @@
 <html>
     <head>
+      <!-- Bootstap Code start -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -8,15 +9,17 @@
       <style type="text/css">
       .tab { margin-left: 40px; }
       </style>
+      <!-- Bootstap Code End -->
       {% if title %}
-      <title>{{ title }} - Project: Sightvisit</title>
+      <title>{{ title }} - SightVisit</title>
       {% else %}
-      <title>Welcome to Project: Sightvisit</title>
+      <title>SightVisit</title>
       {% endif %}
     </head>
     <body>
+      <!-- Nav Bar Code -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Project: Sightvisit</a>
+    <a class="navbar-brand" href="#"><b>SightVisit</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,9 +35,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/sites">Sites <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="/form">Form <span class="sr-only">(current)</span></a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="/upload">Upload <span class="sr-only">(current)</span></a>
         </li>
@@ -53,7 +56,7 @@
           </div>
         </li>
         <li class="nav-item"> -->
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -63,6 +66,7 @@
     </div>
   </nav>
   </nav>
+        <!-- Nav Bar Code End -->
 
         <!-- <div>Project Streetview:
         <a href="/index">Home</a>
@@ -71,6 +75,8 @@
         <a href="/form">Form</a>
         <a href="/upload">Uploads</a>
         </div> -->
+
+        <!-- Code for red flasking messages if text field is left blank -->
         <hr>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -84,3 +90,5 @@
         {% block content %}{% endblock %}
     </body>
 </html>
+
+<!-- Source: Miguel Grinberg https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world -->

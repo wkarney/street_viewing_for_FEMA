@@ -1,8 +1,16 @@
+<!-- This page connects to base.html -->
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>{{ user.username }}, these are your sites: </h1>
-    {% for post in posts %}
+    <!-- Display images from static folder -->
+    <h2 class="tab">{{ user.username }}, here are your recent sites: </h2>
+    <div><p class="tab" ><b>Brooklyn, NY:</b><br>
+      <img src="{{url_for('static', filename='bklyn_snow.jpg')}}" height=300, width=150 align=left</p>
+    </div>
+    <div><p class="tab" ><b>Queens, NY:</b><br>
+      <img src="{{url_for('static', filename='sandy_yellow.jpg')}}" height=150, width=300 align=left</p>
+    </div>
+    <!-- {% for post in posts %}
     <div><p>{{ post.site.location }} new post: <b>{{ post.body }}</b></p></div>
-    {% endfor %}
+    {% endfor %} -->
 {% endblock %}

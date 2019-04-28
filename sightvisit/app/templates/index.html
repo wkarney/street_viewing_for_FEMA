@@ -1,8 +1,19 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome Back {{ user.username }}!</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author.username }} new post: <b>{{ post.body }}</b></p></div>
-    {% endfor %}
+    <h1><p class="tab">Welcome Back FEMA Agent {{ user.username }}!</p></h1>
+    <!-- {% for post in posts %} -->
+    <!-- <div><p class="tab" ><b>{{ post.author.username }} new post:</b>
+      <img src="{{url_for('static', filename='campfire.jpg')}}" height=150, width=300 align=left</p>
+    </div> -->
+    <!-- {% endfor %} -->
+    <br>
+    <!-- Images posted from other agents  -->
+    <h4><p class="tab">Recent posts from agents that you follow:</p></h4>
+    <div><p class="tab" ><b>Agent John D Hazard:</b>
+      <img src="{{url_for('static', filename='campfire.jpg')}}" height=300, width=600 align=left</p>
+    </div>
+    <div><p class="tab" ><b>Agent Stevie DiSalvo:</b>
+      <img src="{{url_for('static', filename='bailbonds.jpg')}}" height=300, width=600 align=left</p>
+    </div>
 {% endblock %}
