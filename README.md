@@ -50,7 +50,10 @@ For ease of use, we have utilized the following Python API Wrappers:
 Note that Google charges for API calls to its Google Maps APIs, but provides a free 1-year $300 credit to its Cloud Platform.
 
 ## Required Libraries
+<<<<<<< HEAD
+=======
 
+>>>>>>> ae187a46c9cc2fc9053c5abfc2a9aab9a95fb68c
 * Python 3.x
 * Flask 1.0.2
 * Flask-Cors 3.0.7
@@ -81,3 +84,7 @@ Note that Google charges for API calls to its Google Maps APIs, but provides a f
 * [*FEMA Damage Assesment Operations Manual*](https://www.fema.gov/media-library-data/1459972926996-a31eb90a2741e86699ef34ce2069663a/PDAManualFinal6.pdf)
 * [Hurricane Sandy Photo by Chester Green](https://www.flickr.com/photos/24531833@N02/8162005749/in/photolist-drfpX4-drfoAJ-drfsto-dp2FKF-drfqsE-drfhFV-dp3D53-dp4xyV-doEcnm-dqJRKr-doVMXY-dqK27z-dpkrnc-dqJPsF-dvjbKq-dqJWsu-dqJUh7-dqJVws-dtcnju-dqJYoa-drfo2D-doV9fm-dqJVLu-doVEX8-dqJY1m-doXbEJ-fAZ2Ap-drwzVa-dqK5mW-dqJLxi-dqK6eq-dtbnax-sJjkTN-dqJT85-dtbndk-drfjXi-dqK4kE-stWQj7-dpkxxH-drfqCR-drfqUy-dqK8g3-su3DRE-doVF5k-dqJXqb-dp3aCf-dpjmxT-dy7Tz6-dwYf5a-dqh3VX)
 * [Hurricane Ike Photo by Flickr user "Grue"](https://www.flickr.com/photos/grue/2886868164/in/photolist-TDJ27B-aPpNhK-8JUUYq-rHXa9-dGUp4-6oUzjN-LrrAo-6mDYdV-4DCkU-2cbqVLP-VpNBb1-65p5f2-qKTW37-5p6Xk3-4dbnrc-djn8T-cMMXuU-q6EuBV-5XLNfX-dAYod6-2fovhc-r1arYw-8r1is2-nnZS4-6ugFFr-9gUewF-VsuFgH-7yCPo6-5wfSDc-Q3miML-9TiJs-29pW6M7-4kfVP1-mbxBc-5mNwkv-YxwoER-kmjyu-usNKC-5B9CHd-apNq68-6mK4w1-aPpNiB-2b5tiXW-9gXmmy-5p6XfJ-2c6VV8N-5h5Mzk-7gRKuQ-fezVU-6ftKvx)
+<<<<<<< HEAD
+  
+=======
+>>>>>>> ae187a46c9cc2fc9053c5abfc2a9aab9a95fb68c
