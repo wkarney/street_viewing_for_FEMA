@@ -1,10 +1,13 @@
+<!-- This page connects to base.html -->
 {% extends "base.html" %}
 
 {% block content %}
+    <!-- Display Title text -->
     <h1 class="tab">Welcome to SightVisit: FEMA's Smart App on the Ground</h1>
     <br><br>
     <h3 class="tab">Sign In:</h3>
     <form class="tab" action="" method="post" novalidate>
+        <!-- display red error messages if TextField empty -->
         {{ form.hidden_tag() }}
         <p>
             {{ form.username.label }}<br>
@@ -24,3 +27,4 @@
         <p>{{ form.submit() }}</p>
     </form>
 {% endblock %}
+<!-- Source: Miguel Grinberg https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world -->

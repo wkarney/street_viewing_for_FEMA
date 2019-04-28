@@ -1,14 +1,19 @@
+# request wtf and flask forms
 from flask_wtf import FlaskForm, Form
+# request assortmemt of field options for forms
 from wtforms import TextField, IntegerField, TextAreaField, StringField, PasswordField, BooleanField, SubmitField, RadioField, SelectField
+# request for valid info in TextField
 from wtforms.validators import DataRequired
+# request for display error
 from wtforms import validators, ValidationError
 
+# Login form with fields
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     remember_me = BooleanField('Remember Me')
     submit = SubmitField('Sign In')
-
+# Contect for template used for Disaster Form
 class ContactForm(Form):
    name = TextField("Owner Name:",[validators.Required("Please enter your name.")])
    Homes = SelectField('House Type (Conventional/Manufactured):', choices = [('C','Conventional'),('M','Manufactured')])
@@ -24,3 +29,6 @@ class ContactForm(Form):
    email = TextField("Email: ",[validators.Required("Please enter your email address."),
       validators.Email("Please enter your email address.")])
    submit = SubmitField("Send")
+
+# Source: Miguel Grinberg https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+# Source: Lalith Polepeddi https://code.tutsplus.com/tutorials/intro-to-flask-adding-a-contact-page--net-28982
