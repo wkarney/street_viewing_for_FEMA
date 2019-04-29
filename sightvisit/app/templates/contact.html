@@ -1,0 +1,65 @@
+<!-- This page connects to base html -->
+{% extends "base.html" %}
+{% block content %}
+<html>
+   <body>
+      <h2 class="tab" style = "text-align: left;">Damage Assessment Form</h2>
+      <h4 class="tab" style = "text-align: left;">Before and After Photos:</h2>
+      <!-- python display error code -->
+      {% for message in form.name.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+      {% for message in form.email.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+      <!-- Display uploaded image next to image downloaded from Google Streetview API -->
+      <img class="tab" src=" {{url_for('send_image', filename=image_name2)}}" height="640" width="400">
+
+      <img src=" {{url_for('send_image', filename=image_name)}}" height="640" width="400">
+      <br>
+      <!-- <form action = "http://localhost:5000/contact" method = post> -->
+      <form action = "/contact" method = post>
+         <fieldset>
+            <!-- <legend>Disaster Form</legend> -->
+            {{ form.hidden_tag() }}
+
+            <div style = font-size:16px; font-weight:bold; margin-left:150px;>
+              <br>
+              <h5 class="tab"> <u><b>General House Details:</b></u></h5>
+              <p class="tab"> <b>{{ form.name.label }} </b>{{ form.name }}<br>
+              <b>{{ form.email.label }}</b>{{ form.email }}</p>
+                <p class="tab"> <b>{{ form.Address.label }} </b>{{address}}<br>
+                <b>Town/City: </b>{{city}}<br>
+               <!-- {{ form.Address(default=address) }}<br> -->
+                <b>{{ form.State.label }} </b>{{state}}<br>
+               <!-- {{ form.State }}<br> -->
+                <b>{{ form.Zip_Code.label }} </b>{{zipcode}}<br></p>
+               <!-- {{ form.Zip_Code }}</p><br> -->
+                <p class="tab"><b>{{ form.Homes.label }}</b> {{ form.Homes }}</p>
+
+               <h5 class="tab"> <u><b>Additional Property Details:</b></u></h5>
+               <p class="tab"> <b>House Type: </b>{{ bldg_type }}<br>
+                               <b>Square Footage: </b>{{ bldg_size }}<br>
+                               <b>Number of Bedrooms: </b>{{ beds }}<br>
+                               <b>Number of Bathrooms: </b>{{ baths }}<br>
+                               <b>Estimated Valuation (Zillow - {{val_desc}}): </b>{{ value }}<br>
+                               <b>Valuation Date (Zillow - {{val_desc}}): </b>{{ val_date }}<br>
+              </p>
+
+               <h5 class="tab"> <u><b>Damage Details:</b></u></h5>
+               <p class="tab"> {{ form.Flood_Plain.label }} {{ form.Flood_Plain }}<br>
+               <!-- <p class="tab"> {{ form.Flood_NonFlood.label }} {{ form.Flood_NonFlood }}</p> -->
+                               {{ form.Insurance.label }} {{ form.Insurance }}<br>
+                               {{ form.Flood_Insurance.label }} {{ form.Flood_Insurance }}<br>
+                               {{ form.Damage_Level.label }} {{ form.Damage_Level}}<br>
+               </p>
+               <br>
+               <p class="tab">{{ form.submit }} </p>
+            </div>
+
+         </fieldset>
+      </form>
+   </body>
+</html>
+{% endblock %}
