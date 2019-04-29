@@ -50,10 +50,57 @@ At the backend, each photograph she takes is stored, along with the summary info
 
 ### Data Acquisition and Processing
 
+Data integration is provided through the following APIs:
+
+Google Street View Static API
+Google Geocoding API
+Zillow GetDeepSearch-Results API
+For ease of use, we have utilized the following Python API Wrappers:
+
+google streetview
+pyzillow
+pygeocoder
+Note that Google charges for API calls to its Google Maps APIs, but provides a free 1-year $300 credit to its Cloud Platform.
+
 ### Required Libraries
+
+Python 3.x
+Flask 1.0.2
+Flask-Cors 3.0.7
+Flask-Uploads 0.2.1
+Flask-WTF 0.14.2
+Pillow 5.4.1
+pyzillow 0.5.5
+google_streetview 1.2.9
+pygeocoder 1.2.5
+exif 0.5.1
+
+
 
 ### SightVisit App
 
+Is currently under development. 
+
 ### Opportunities for Further Improvements
+
+SQL/Database Integration
+Secure cloud storage of damage information
+Deploy live web application
+Mobile App
+Develop native application for iOS and/or Android
+Satellite Data
+Incorporate satellite imagery for relevent disaster situations
+Insurer Partnership Integration
+Work with corporate partners to streamline processes and standardize forms
+Incorporate additional data resources to satisfy dual requirements of FEMA and participating insurance companies
+Machine Learning
+Image recognition to classify damage levels and estimate expenses
+
+### References
+
+FEMA Damage Assesment Operations Manual
+Hurricane Sandy Photo by Chester Green
+Hurricane Ike Photo by Flickr user "Grue"
+
 
 
