@@ -27,13 +27,33 @@ During the recovery phase immediately following a disaster, FEMA performs damage
 
 ## Executive Summary
 
+The Department of Homeland Security Federal Emergency Management Agency's (FEMA) assists citizens and first responders by ensuring accuracy, consistency, and efficiency in their damage response teams. The challenge faced by local organizations, both in the initial assessment and verification stages, is to quickly and accurately make damage appraisals. Unfortunately, not every volunteer is thoroughly trained and qualified to collect this data.
+
+It’s challenging to train and maintain a volunteer staff with complete knowledge and tools for the required damage assessments during a crisis. Accuracy is problematic without detailed photos before and after an occurrence. As the urgency at disaster zones escalates, consistent, valid reports become even more integral and even more challenging. When volunteers lack handy, easily understood tools, it holds up effective resource deployment.
+
+SightVisit will empower FEMA damage assessment teams, professionally trained or not, to conduct accurate, consistent, site visits. They can quickly access before and after photos of a site, and review a repository of all visits. It's easy to manage and deliver the results to local, county, and state decision makers so they can verify sites remotely. SightVisit maximizes FEMA’s ability to aid to those who need it most and assures proper oversight of all stages of the damage assessment. Our powerful functions will enable you to upload a photo and pertinent details about each location instantly. We’re moving the process away from an analog paper and pencil to an online form, and we can maintain a database of all site visits recorded on any street in any town.
+
+Here at Team Street View, with the cooperation of Newlight Technologies, we love to empower our users with powerful tools utilizing sound data science and reliable results. We're a thoughtful team of data scientists committed to bringing the best possible user experience for local volunteers and adjusters to get their best work done.
+
+We've enjoyed partnering with Newlight Technologies and FEMA to transform how damage assessment teams collect data, and we’re excited to make SightVisit a vital tool in damage assessment and increase the already robust response to crises for all citizens.
+
+If you're ready to move from stacks of complex paper forms to a ready to use, sustainable, web application, Team Street View is willing to take you there. The repository details how we'll do it and what you can expect along the way.
+
 ## Use Case Scenario
 
-Carol Evans is an emergency management specialist at FEMA. Days after a disaster, she's out in the field assessing residential properties. She hops out of her car and takes a photo of the first house she sees in disrepair. She uploads the photo to SightVisit, sees the photo she took as well as an image of the home prior to the disaster. The web app also displays a value estimate of the house and additional property details (such as square footage, number of bedrooms/bathrooms, and housing type).
+Carol is a disaster assessment lead at FEMA heading to the field, days after a disaster. She has been tasked to quickly scan the disaster zone and assess the damage to residential property.
 
-## SightVisit App
+She jumps out of her truck, starts walking the street, and sees the first house in disrepair. She pulls out her phone, opens the SightVisit app, and takes a photograph facing the house. Upon taking a photograph she sees a page displaying the photo she took, the image of the home before the disaster, a value estimate of the house, and additional property details (such as square footage, number of bedrooms/bathrooms, and housing type).
 
+At the backend, each photograph she takes is stored, along with the summary information, and available to be accessed at a later time or when web connectivity is available again. However, ideally, even with limited web connectivity, a low-resolution image can be uploaded directly in real-time to the disaster response team at the home office. This data can be aggregated to assess total damage and real-time statistics relayed to appropriate agencies for assessment, disaster management, and appropriation purposes.
 
+-- Thanks to the [General Assembly DSI-6 Team StreetView](https://github.com/Mauriekathan/Image_Geo_Team_Street_View) for this example use case.
+
+## SightVisit App Demo
+
+Currently the application works as a web app run locally as a demo. 
+
+[SightVisit Demo Video]("./SightVisit-demo.mov")
 
 ## Data Acquisition
 
