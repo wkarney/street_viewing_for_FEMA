@@ -53,7 +53,7 @@ At the backend, each photograph she takes is stored, along with the summary info
 
 Currently the application works as a web app run locally as a demo. 
 
-[SightVisit Demo Video]("./SightVisit-demo.mov")
+[SightVisit Demo Video](https://github.com/wkarney/street_viewing_for_FEMA/blob/master/SightVisit-demo.mov)
 
 ## Data Acquisition
 
