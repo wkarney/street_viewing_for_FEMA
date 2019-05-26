@@ -5,7 +5,7 @@
   - [Problem Statement](#problem-statement)
   - [Executive Summary](#executive-summary)
   - [Use Case Scenario](#use-case-scenario)
-  - [SightVisit App](#sightvisit-app)
+  - [SightVisit App](#sightvisit-app-demo)
   - [Data Acquisition](#data-acquisition)
   - [Required Libraries](#required-libraries)
   - [Opportunities for Further Improvements](#opportunities-for-further-improvements)
