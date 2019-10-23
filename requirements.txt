@@ -4,6 +4,6 @@ Flask-Cors==3.0.7
 Flask-Uploads==0.2.1
 Flask-WTF==0.14.2
 google-streetview==1.2.9
-Pillow==5.4.1
+Pillow==6.2.0
 pygeocoder==1.2.5
 pyzillow==0.5.5
