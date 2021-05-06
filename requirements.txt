@@ -1,6 +1,6 @@
 exif==0.5.1
 Flask==1.0.2
-Flask-Cors==3.0.7
+Flask-Cors==3.0.9
 Flask-Uploads==0.2.1
 Flask-WTF==0.14.2
 google-streetview==1.2.9
